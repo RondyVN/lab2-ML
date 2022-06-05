@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>Please, fill in the data about the passenger of Titanic</h1>
+    <form method="post" id="titanic_form">
+        <div class="form-group">
+            <label for="age">Age:</label><br>
+            <input type="number" name="LotArea" id="LotArea"  class="form-control" placeholder="Lot Area"><br>
+            <input type="number" name="GarageArea" id="GarageArea"  class="form-control" placeholder="Garage Area"><br>
+            <input type="number" name="PoolArea" id="PoolArea"  class="form-control" placeholder="Pool Area"><br>
+            <input type="number" name="YearBuilt" id="YearBuilt"  class="form-control" placeholder="Year Built"><br>
+            <input type="number" name="YearRemodAdd" id="YearRemodAdd"  class="form-control" placeholder="Year Remodel Add"><br>
+            <input type="number" name="YrSold" id="YrSold"  class="form-control" placeholder="Year Sold"><br>
+            <input type="submit" class="btn btn-success" value="Submit">
+        </div>
+    </form>
+
+{% endblock %}
